@@ -1,0 +1,9 @@
+{% extends 'layouts/master.html' %}
+{% block title %}Upload CSV{% endblock %}
+{% block body %}
+<h1>Upload CSV</h1>
+<form method='post' action='/' enctype='multipart/form-data'>
+              Upload a csv file: <input type='file' name='file'>
+              <input type='submit' value='Upload' class="btn btn-success">
+</form>
+{% endblock %}
